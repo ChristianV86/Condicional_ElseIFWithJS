@@ -9,22 +9,28 @@
 </head>
 
 <body id="cuerpo">
+
+    <!-- Este código permitirá que puedas cambiar el fondo de la página -->
+
     <script>
-        // Este ejemplo permitirá que puedas cambiar el fondo de la página
         var cuerpo = document.getElementById("cuerpo");
+        // El método toLowerCase() hace que las palabras ingresadas pasen a minúsculas
+        var colorPagina = prompt("¿Cuál de los siguientes colores te gustaría para el fondo?: azul, verde o rojo").toLowerCase();
 
-        var colorPagina = prompt("¿Cuál de los siguientes colores te gustaría para el fondo?: azul, verde o rojo");
-
-        if (colorPagina == "azul" || colorPagina == "Azul" || colorPagina == "AZUL") {
-            cuerpo.style.backgroundColor = "blue";
+        if (colorPagina!="azul" && colorPagina!="rojo" && colorPagina!="verde") {
+            alert("Ese color no está contemplado");
         }
-        else if (colorPagina == "verde" || colorPagina == "Verde" || colorPagina == "VERDE") {
+        // Condicional else if anidado
+        else if (colorPagina == "azul") {
+            cuerpo.style.backgroundColor = "blue";
+        }        
+        else if (colorPagina == "verde") {
             cuerpo.style.backgroundColor = "green";
         }
-
-        else if (colorPagina == "rojo" || colorPagina == "Rojo" || colorPagina == "ROJO") {
+        else {
             cuerpo.style.backgroundColor = "red";
-        }
+        }        
+
     </script>
 </body>
 
