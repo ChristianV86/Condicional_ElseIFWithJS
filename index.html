@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condicional IF With JS</title>
+</head>
+
+<body id="cuerpo">
+    <script>
+        // Este ejemplo permitirá que puedas cambiar el fondo de la página
+        var cuerpo = document.getElementById("cuerpo");
+
+        var colorPagina = prompt("¿Cuál de los siguientes colores te gustaría para el fondo?: azul, verde o rojo");
+
+        if (colorPagina == "azul" || colorPagina == "Azul" || colorPagina == "AZUL") {
+            cuerpo.style.backgroundColor = "blue";
+        }
+        else if (colorPagina == "verde" || colorPagina == "Verde" || colorPagina == "VERDE") {
+            cuerpo.style.backgroundColor = "green";
+        }
+
+        else if (colorPagina == "rojo" || colorPagina == "Rojo" || colorPagina == "ROJO") {
+            cuerpo.style.backgroundColor = "red";
+        }
+    </script>
+</body>
+
+</html>
